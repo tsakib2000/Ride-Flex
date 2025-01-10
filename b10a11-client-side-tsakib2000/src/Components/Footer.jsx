@@ -2,7 +2,7 @@ import CarLogo from '../assets/icons8-car-rental-glyph-96.png'
 
 const Footer = () => {
     return (
-<footer className="footer bg-amber-400 text-neutral-content p-10 flex flex-col justify-center items-center *:text-[#3A1A03]">
+<footer className="footer bg-amber-200 text-neutral-content p-10 flex flex-col justify-center items-center *:text-[#3A1A03]">
 
   <div className='flex justify-evenly w-full'>
   <div className=''>

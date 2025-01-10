@@ -8,9 +8,9 @@ const SpecialOffer = () => {
         Aos.init();
     },[])
   return (
-    <div data-aos="fade-down">
+    <div className="mb-8" data-aos="fade-down">
       {/* <motion.div layoutId="modal" /> */}
-        <h1 className="animate-pulse font-bold text-center text-2xl md:text-4xl my-5">Exclusive Special Offers</h1>
+        <h1 className="animate-pulse font-bold text-center text-2xl md:text-4xl mb-5">Exclusive Special Offers</h1>
         < div  data-aos="zoom-in-up"  className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5">
       <OfferCard
         title={"Drive Into Savings"}
@@ -35,6 +35,7 @@ const SpecialOffer = () => {
       />
     
     </div>
+    
     </div>
   );
 };

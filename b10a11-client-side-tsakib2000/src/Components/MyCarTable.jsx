@@ -22,7 +22,7 @@ const MyCarTable = ({car,handleUpdate,handleDelete}) => {
             <div className="">
               <div className="h-20 md:h-32 w-60">
                 <img
-                className="h-full w-full object-center rounded-2xl"
+                className="h-full w-full object-cover rounded-2xl"
                   src={photo}
                   alt="Avatar Tailwind CSS Component" />
               </div>

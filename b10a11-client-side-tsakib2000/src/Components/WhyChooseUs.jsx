@@ -5,9 +5,9 @@ import { CiBookmarkCheck, CiClock2 } from "react-icons/ci";
 
 const WhyChooseUs = () => {
   return (
-    <div className="my-8">
+    <div className="mb-8">
         <h1 className="text-2xl md:text-4xl font-bold text-center mb-4"> Why Choose Us for Your Next Ride?</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
         <WhyChooseCard
           icon={<FaCarSide />}
           title={"Wide Variety of Cars"}

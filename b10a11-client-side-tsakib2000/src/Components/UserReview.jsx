@@ -31,8 +31,8 @@ useEffect(()=>{
     }
    
     return (
-        <div data-aos="zoom-in-up" >
-            <h1 className="text-center font-bold text-2xl md:text-4xl">Hear from Our Happy Customers</h1>
+        <div data-aos="zoom-in-up " className="mb-8">
+            <h1 className="text-center font-bold text-2xl md:text-4xl mb-5">Hear from Our Happy Customers</h1>
             <Swiper
 
         spaceBetween={30}

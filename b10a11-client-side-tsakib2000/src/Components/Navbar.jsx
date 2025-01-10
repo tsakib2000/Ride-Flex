@@ -69,7 +69,7 @@ const Navbar = () => {
     <>
             <button
               onClick={signOutUser}
-              className="btn  rounded-3xl py-0  bg-amber-400 text-white font-bold border-none"
+              className="btn  rounded-3xl py-0  bg-amber-400 text-white font-bold border-none shadow-2xl"
             >
               log Out
             </button>
@@ -88,13 +88,13 @@ const Navbar = () => {
             <>
               <Link
                 to="/login"
-                className="btn rounded-3xl py-0 bg-amber-400 text-white font-bold border-none"
+                className="btn rounded-3xl py-0 bg-amber-400 text-white font-bold border-none shadow-2xl"
               >
                 Login
               </Link>
               <Link
                 to="/register"
-                className="btn  rounded-3xl py-0  bg-amber-400 text-white font-bold border-none"
+                className="btn  rounded-3xl py-0  bg-amber-400 text-white font-bold border-none shadow-2xl"
               >
                 Register
               </Link>
