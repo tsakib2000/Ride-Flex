@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
 
 
 
@@ -9,7 +10,7 @@ const OfferCard = ({title,offer,desc}) => {
             <h1 className="font-bold text-3xl">{title}</h1>
             <h3> {offer}</h3>
             <p>{desc}</p>
-           <div className="flex justify-end flex-grow items-center "> <button className="btn bg-amber-300 text-[#3A1A03]">Book Now</button></div>
+           <div className="flex justify-end flex-grow items-center "> <Link to='/available-cars' className="btn bg-amber-300 text-[#3A1A03]">Book Now</Link></div>
         </div>
     );
 };

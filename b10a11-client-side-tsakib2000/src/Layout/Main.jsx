@@ -3,15 +3,17 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 const Main = () => {
-    return (
-        <div className="w-11/12 mx-auto">
-            <div className="h-[103px] ">
-            <Navbar/>
-            </div>
-            <Outlet/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <>
+      <div className="h-[103px] bg-amber-200 flex justify-center items-center">
+        <Navbar />
+      </div>
+      <div className="w-11/12 mx-auto ">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default Main;

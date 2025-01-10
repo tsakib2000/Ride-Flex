@@ -4,9 +4,10 @@ import HeroIMG from '../assets/hero.jpg'
 const Hero = () => {
     return (
         <div
-        className="hero h-[500px]  rounded-tl-3xl rounded-br-3xl"
+        className="hero h-[600px]  rounded-tl-3xl rounded-br-3xl bg-cover "
         style={{
           backgroundImage:`url(${HeroIMG})`,
+          
         }}>
         <div className="hero-overlay bg-opacity-60 rounded-tl-3xl rounded-br-3xl"></div>
         <div className="hero-content text-neutral-content text-center shadow-2xl">

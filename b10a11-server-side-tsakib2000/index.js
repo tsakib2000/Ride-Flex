@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 app.use(
   cors({
-    origin: ["http://localhost:5173",'https://car-rental-e5aee.web.app','https://car-rental-e5aee.firebaseapp.com/' ],
+    origin: ["http://localhost:5174",'https://car-rental-e5aee.web.app','https://car-rental-e5aee.firebaseapp.com/' ],
     credentials: true,
     optionsSuccessStatus: 200,
   })
