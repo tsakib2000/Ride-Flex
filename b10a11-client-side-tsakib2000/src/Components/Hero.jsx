@@ -9,7 +9,7 @@ const Hero = () => {
           backgroundImage:`url(${HeroIMG})`,
           
         }}>
-        <div className="hero-overlay bg-opacity-60 rounded-tl-3xl rounded-br-3xl"></div>
+        <div className="hero-overlay bg-opacity-60 "></div>
         <div className="hero-content text-neutral-content text-center shadow-2xl">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Discover Freedom on Four Wheels</h1>

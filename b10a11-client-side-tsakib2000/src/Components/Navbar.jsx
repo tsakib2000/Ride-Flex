@@ -28,8 +28,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="z-10 top-0 navbar bg-transparent backdrop-blur-2xl fixed  pt-4  pb-8 w-11/12 mx-auto">
-      <div className="navbar-start">
+    <div className="z-10 top-0 navbar bg-transparent backdrop-blur-2xl fixed  pt-4  pb-8 mx-auto">
+<div className="navbar w-11/12 mx-auto">
+<div className="navbar-start">
         <Link className="btn btn-ghost text-xl border border-gray-400">
           <img src={CarLogo} alt="" />
           <span className="font-bold">RideFlex</span>
@@ -102,6 +103,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+</div>
     </div>
   );
 };
