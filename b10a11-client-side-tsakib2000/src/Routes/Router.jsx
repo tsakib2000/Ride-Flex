@@ -30,7 +30,7 @@ const router=createBrowserRouter([
             },
             {
                 path:'/carDetails/:id',
-                element:<PrivateRoute><CarDetails/></PrivateRoute>
+                element:<CarDetails/>
             },
             {
                 path:'/my-cars',

@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 app.use(
   cors({
-    origin: ["http://localhost:5174",'https://car-rental-e5aee.web.app','https://car-rental-e5aee.firebaseapp.com/' ],
+    origin: ["http://localhost:5173",'https://car-rental-e5aee.web.app','https://car-rental-e5aee.firebaseapp.com/' ],
     credentials: true,
     optionsSuccessStatus: 200,
   })
@@ -114,7 +114,7 @@ async function run() {
     });
 
     //Get single car
-    app.get("/car/:id", verifyToken,async (req, res) => {
+    app.get("/car/:id",async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
       const result = await AllCarCollection.findOne(query);
@@ -188,7 +188,7 @@ app.patch('/cancel/:id',verifyToken,async(req,res)=>{
     app.get("/latestCars",async (req, res) => {
       const result = await AllCarCollection.find()
         .sort({ datePosted: -1 })
-        .limit(6)
+        .limit(8)
         .toArray();
       res.send(result);
     });

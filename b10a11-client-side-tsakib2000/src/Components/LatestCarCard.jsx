@@ -8,7 +8,6 @@ const LatestCarCard = ({ car }) => {
     carModel,
     dailyRentalPrice,
     availability,
-
     bookingCount,
     photo,
     datePosted,
@@ -27,9 +26,9 @@ const LatestCarCard = ({ car }) => {
           </span>
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex justify-between items-end">
           <div>
-            <p className="text-base">Daily Price: ${dailyRentalPrice}/day</p>
+            <p className="text-base"> $ {dailyRentalPrice}/day</p>
             <p className="text-base">
               Date Posted:{format(new Date(datePosted), "dd/MM/yyyy")}
             </p>
