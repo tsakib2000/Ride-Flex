@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useAxiosSecure from "../Hooks/useAxiosSecure";
 import toast from "react-hot-toast";
 import "react-datepicker/dist/react-datepicker.css";
@@ -14,6 +14,7 @@ const CarDetails = () => {
   const [car, setCar] = useState({});
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(null);
+  const navigate=useNavigate()
   useEffect(() => {
     fetchCar();
   }, [id]);
@@ -38,7 +39,7 @@ const CarDetails = () => {
   } = car || {};
 
   const handleBook = async () => {
-
+if(!user) return navigate('/login')
     if(endDate === null) return toast.error('Please give End date')
     document.getElementById("my_modal_5").showModal();
 
