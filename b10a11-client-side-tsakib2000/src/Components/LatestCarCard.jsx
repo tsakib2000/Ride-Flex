@@ -35,7 +35,7 @@ const LatestCarCard = ({ car }) => {
             <p className="text-base">Booking Count:{bookingCount}</p>
           </div>
           <div>
-            <Link to={`/carDetails/${_id}`} className="btn btn-sm">bookNow</Link>
+            <Link to={`/carDetails/${_id}`} className="btn btn-sm btn-outline">bookNow</Link>
           </div>
         </div>
       </div>
