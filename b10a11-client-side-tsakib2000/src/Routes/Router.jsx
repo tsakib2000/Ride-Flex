@@ -11,6 +11,8 @@ import CarDetails from "../Pages/CarDetails";
 import MyCar from "../Pages/MyCar";
 import MyBooking from "../Pages/MyBooking";
 
+import Faq from "../Pages/Faq";
+
 const router=createBrowserRouter([
     {
         path:'/',
@@ -40,6 +42,10 @@ const router=createBrowserRouter([
             {
                 path:'/my-booking',
                 element:<PrivateRoute><MyBooking/></PrivateRoute>
+            },
+            {
+                path:'/faq',
+                element:<Faq/>
             },
             {
                 path:'/register',
