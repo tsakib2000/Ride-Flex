@@ -9,13 +9,13 @@ const Main = () => {
   
   return (
     <>
-      <div className="h-[103px] bg-amber-200 flex justify-center items-center">
+      <div className="h-[80px] bg-amber-200 flex justify-center items-center">
         <Navbar />
       </div>
     {
       pathname == '/' &&   <Hero/>
     }
-      <div className="w-11/12 mx-auto ">
+      <div className="w-11/12 mx-auto min-h-[calc(100vh-392px)] ">
         <Outlet />
       </div>
       <Footer />

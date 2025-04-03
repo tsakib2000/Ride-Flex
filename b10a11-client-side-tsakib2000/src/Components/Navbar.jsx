@@ -17,7 +17,7 @@ const Navbar = () => {
   const navbarLinks = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink className={({isActive})=>isActive? 'text-white font-bold underline':'text-black'} to="/">Home</NavLink>
       </li>
       <li>
         <NavLink to="/available-cars">Available Cars</NavLink>
@@ -42,16 +42,16 @@ const Navbar = () => {
     </>
   );
   return (<>
-    <div className="z-10 top-0 navbar bg-transparent backdrop-blur-2xl fixed  pt-4  pb-8 mx-auto flex flex-col md:flex-row">
+    <div className="z-10 top-0 navbar bg-amber-200  fixed  mx-auto flex flex-col md:flex-row">
 <div className="navbar w-11/12 mx-auto">
 <div className="navbar-start">
-        <Link className="btn btn-ghost text-xl border border-gray-400">
+        <Link className="flex items-center gap-2 text-xl">
           <img src={CarLogo} alt="" />
           <span className="font-bold">RideFlex</span>
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex border border-gray-400 rounded-xl">
-        <ul className="menu menu-horizontal px-1">{navbarLinks}</ul>
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu menu-horizontal px-1 flex gap-1">{navbarLinks}</ul>
       </div>
       <div className="navbar-end    ">
         <div className="dropdown ">
@@ -73,7 +73,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+            className="bg-amber-50 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
           >
             {navbarLinks}
           </ul>
