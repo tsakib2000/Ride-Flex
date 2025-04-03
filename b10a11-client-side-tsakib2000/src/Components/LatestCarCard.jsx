@@ -14,7 +14,7 @@ const LatestCarCard = ({ car }) => {
   } = car || {};
 
   return (
-    <div className="card card-compact bg-base-100 h-[397px] shadow-xl flex scale-90 hover:scale-100 duration-300">
+    <div className="card card-compact bg-base-100 h-[397px] shadow-xl flex">
       <figure>
         <img className="w-full object-cover" src={photo} alt="Shoes" />
       </figure>

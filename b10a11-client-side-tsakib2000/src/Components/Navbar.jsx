@@ -47,7 +47,7 @@ const Navbar = () => {
 <div className="navbar-start">
         <Link className="flex items-center gap-2 text-xl">
           <img src={CarLogo} alt="" />
-          <span className="font-bold">RideFlex</span>
+          <span className="font-bold text-black ">RideFlex</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex ">

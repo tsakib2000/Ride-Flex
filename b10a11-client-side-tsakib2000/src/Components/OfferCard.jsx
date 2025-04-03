@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const OfferCard = ({title,offer,desc}) => {
  
     return (
-        <div className=" flex flex-col rounded-xl border border-amber-200 p-7 *:text-center hover:scale-105 transition-transform duration-300 ease-in-out">
+        <div className=" flex flex-col rounded-xl border border-amber-200 p-7 *:text-center ">
             <h1 className="font-bold text-3xl">{title}</h1>
             <h3> {offer}</h3>
             <p>{desc}</p>

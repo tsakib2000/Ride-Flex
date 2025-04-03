@@ -4,13 +4,13 @@ import HeroIMG from '../assets/hero.jpg'
 const Hero = () => {
     return (
         <div
-        className="hero h-[600px] rounded-tl-3xl rounded-br-3xl bg-cover mb-8"
+        className="hero h-[600px]  bg-cover mb-8"
         style={{
           backgroundImage:`url(${HeroIMG})`,
           
         }}>
         <div className="hero-overlay bg-opacity-60 "></div>
-        <div className="hero-content text-white text-center shadow-2xl">
+        <div className="hero-content text-white text-center ">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Discover Freedom on Four Wheels</h1>
             <p className="mb-5">
