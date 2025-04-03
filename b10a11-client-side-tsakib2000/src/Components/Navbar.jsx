@@ -17,7 +17,7 @@ const Navbar = () => {
   const navbarLinks = (
     <>
       <li>
-        <NavLink className={({isActive})=>isActive? 'text-white font-bold underline':'text-black'} to="/">Home</NavLink>
+        <NavLink  to="/">Home</NavLink>
       </li>
       <li>
         <NavLink to="/available-cars">Available Cars</NavLink>
