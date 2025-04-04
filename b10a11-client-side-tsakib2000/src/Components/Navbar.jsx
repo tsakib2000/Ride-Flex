@@ -42,8 +42,9 @@ const Navbar = () => {
     </>
   );
   return (<>
-    <div className="z-10 top-0 navbar bg-amber-200  fixed  mx-auto flex flex-col md:flex-row">
-      <div className="navbar w-11/12 mx-auto">
+    <div className="z-10 top-0 navbar bg-amber-200  fixed  mx-auto flex flex-col h-[80px] md:flex-row">
+     <div className="flex justify-evenly w-11/12 mx-auto">
+     <div className="navbar ">
         <div className="navbar-start">
           <Link className="flex items-center gap-2 text-xl">
             <img src={CarLogo} alt="" />
@@ -158,6 +159,7 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
+     </div>
     </div>
 
   </>
