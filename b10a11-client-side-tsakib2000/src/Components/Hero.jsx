@@ -10,13 +10,13 @@ const Hero = () => {
          mb-8">
 
         <div className="lg:pl-4 max-w-md">
-          <h1 className=" mb-5 md:text-5xl lg:text-7xl font-bold">Discover Freedom on Four <span className='text-amber-500'> Wheels</span></h1>
-          <p className="mb-5 lg:text-lg">
+          <h1 className=" mb-5 text-4xl md:text-5xl lg:text-7xl font-bold dark:text-black">Discover Freedom on Four <span className='text-amber-500'> Wheels</span></h1>
+          <p className="mb-5 lg:text-lg dark:text-black">
             Unleash the joy of exploration with our premium car rental service. Whether you&apos;re planning a weekend getaway, a business trip, or a cross-country adventure, we provide the perfect ride for every journey.
           </p>
           <Link to='/available-cars' className="btn bg-amber-400 text-white border-none">Start Your Journey</Link>
         </div>
-        <div>
+        <div className='hidden md:block'>
           <img src={HeroIMG} alt="" />
         </div>
       </div>
