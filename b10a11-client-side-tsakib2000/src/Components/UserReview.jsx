@@ -35,17 +35,12 @@ useEffect(()=>{
             <h1 className="text-center font-bold text-2xl md:text-4xl mb-5">Hear from Our Happy Customers</h1>
             <Swiper
 
+   slidesPerView={3}
         spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination]}
         className="mySwiper"
       >
         {
