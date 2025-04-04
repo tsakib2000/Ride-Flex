@@ -1,6 +1,7 @@
 
 import LatestCars from "../Components/LatestCars";
 import LogoMarquee from "../Components/Marquee/LogoMarquee";
+import NewsLetter from "../Components/NewsLetter";
 import SpecialOffer from "../Components/SpecialOffer";
 import UserReview from "../Components/UserReview";
 import WhyChooseUs from "../Components/WhyChooseUs";
@@ -15,7 +16,7 @@ const Home = () => {
            <SpecialOffer/>
            <LatestCars/>
            <UserReview/>
-
+<NewsLetter/>
         </div>
     );
 };

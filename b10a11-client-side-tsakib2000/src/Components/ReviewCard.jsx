@@ -23,7 +23,7 @@ const ReviewCard = ({ review }) => {
 
         <p className="text-gray-700 mb-4">{reviewText}</p>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 hidden md:block">
           <img
             src={profileImage}
             alt="Profile"
