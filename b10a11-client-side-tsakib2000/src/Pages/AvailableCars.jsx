@@ -89,7 +89,7 @@ const handleSortByPrice=(order)=>{
 
    {/* Grid and list Toggle button */}
 
-   <div className="bg-gray-200 text-sm text-gray-500 leading-none border-2 border-gray-200 rounded-full inline-flex">
+   <div className=" hidden md:inline bg-gray-200 text-sm text-gray-500 leading-none border-2 border-gray-200 rounded-full inline-flex ">
      <button
        onClick={() => setIsGridView(true)}
        className={`${

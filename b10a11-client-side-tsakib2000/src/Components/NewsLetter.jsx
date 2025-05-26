@@ -3,8 +3,8 @@ import toast from "react-hot-toast";
 
 const NewsLetter = () => {
     return (
-        <div className="flex justify-between items-center bg-amber-400 w-full md:w-[700px] lg:w-[1000px] mx-auto py-8 px-10 md:px-16 rounded-xl">
-            <h1 className=" md:text-4xl font-bold">STAY UPTO DATE ABOUT <br /> OUR LATEST OFFERS</h1>
+        <div className="flex flex-col md:flex-row justify-between items-center bg-amber-400 w-full md:w-[700px] lg:w-[1000px] mx-auto py-8 px-10 md:px-16 rounded-xl">
+            <h1 className="text-2xl md:text-4xl mb-2 md:mb-0 font-bold">STAY UPTO DATE ABOUT <br /> OUR LATEST OFFERS</h1>
             <div>
                 <label className="input input-bordered flex items-center gap-2">
                     <svg
