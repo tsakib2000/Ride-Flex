@@ -61,6 +61,18 @@ const AvailableCars = () => {
           </select>
         </div>
 
+ <div className="col-span-6 flex justify-center items-center  p-1 overflow-hidden border rounded-lg    focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+          <input
+            onChange={e => setSearch(e.target.value)}
+            className="px-6 py-2  text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
+            type="text"
+            name="search"
+            value={search}
+            placeholder="Enter Your Car Model"
+          />
+          <CiSearch className="font-bold text-xl" />
+        </div>
+
         <div className="col-span-3 w-full">
           <select
             onChange={(e) => setSort(e.target.value)}
@@ -75,17 +87,7 @@ const AvailableCars = () => {
           </select>
         </div>
 
-        <div className="col-span-6 flex justify-center items-center  p-1 overflow-hidden border rounded-lg    focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
-          <input
-            onChange={e => setSearch(e.target.value)}
-            className="px-6 py-2  text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
-            type="text"
-            name="search"
-            value={search}
-            placeholder="Enter Your Car Model"
-          />
-          <CiSearch className="font-bold text-xl" />
-        </div>
+       
 
       </div>
 
